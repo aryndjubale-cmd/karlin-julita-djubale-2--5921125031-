@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-02 Specificity</title>
+  <style>
+    /* Nilai: Inline 1000 > ID 100 > Class 10 > Element 1 */
+    p { color: black; } /* 1 */
+    .kotak p { color: blue; } /* 10 + 1 = 11 */
+    #unik p { color: green; } /* 100 + 1 = 101 - MENANG */
+    p.khusus { color: orange; } /* 1 + 10 = 11 */
+  </style>
+</head>
+<body>
+  <div class="kotak" id="unik">
+    <h1>Specificity</h1>
+    <p class="khusus">Ini hijau karena #unik p paling spesifik, walau ditulis di atas.</p>
+  </div>
+  <p>Urutan kalau skor sama: yang ditulis paling bawah yang menang.</p>
+</body>
+</html>

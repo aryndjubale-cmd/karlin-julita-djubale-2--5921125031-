@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-05 Warna Background</title>
+  <style>
+    .nama { color: red; background: yellow; padding: 10px; }
+    .hex { color: #1a73e8; background: #e3f2fd; padding: 10px; }
+    .rgb { color: rgb(255, 0, 0); background: rgba(0, 0, 255, 0.1); padding: 10px; }
+    .gambar {
+      height: 150px; color: white; padding: 15px;
+      background-image: url("https://via.placeholder.com/600x150");
+      background-size: cover; background-position: center; background-repeat: no-repeat;
+    }
+    .gradient { height: 80px; background: linear-gradient(to right, #1a73e8, #34a853); color: white; padding: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Warna & Background</h1>
+  <p class="nama">Warna pakai nama - red / yellow</p>
+  <p class="hex">Warna pakai HEX - #1a73e8</p>
+  <p class="rgb">Warna pakai RGB / RGBA</p>
+  <div class="gambar">Background Gambar - cover + center</div><br>
+  <div class="gradient">Background Gradient</div>
+</body>
+</html>

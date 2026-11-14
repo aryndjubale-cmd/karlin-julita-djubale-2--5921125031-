@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-08 Layout</title>
+  <style>
+    .block { display: block; background: #ffcccb; margin: 5px; padding: 8px; }
+    .inline { display: inline; background: #c8e6c9; padding: 4px; }
+    .inline-block { display: inline-block; width: 120px; background: #bbdefb; margin: 5px; padding: 10px; }
+    .none { display: none; }
+    .relatif { position: relative; top: 10px; left: 15px; background: yellow; padding: 8px; }
+    .wadah { position: relative; height: 120px; background: #f0f0f0; }
+    .absolut { position: absolute; top: 10px; right: 10px; background: orange; padding: 8px; }
+    .tetap { position: fixed; bottom: 10px; right: 10px; background: #1a73e8; color: white; padding: 8px; }
+    .float-kiri { float: left; width: 120px; background: #ffcc80; margin-right: 10px; padding: 10px; }
+    .clear { clear: both; }
+    .overflow { width: 250px; height: 60px; overflow: auto; border: 1px solid #999; padding: 8px; }
+    .z1 { position: relative; z-index: 1; background: red; color: white; padding: 10px; }
+    .z2 { position: relative; z-index: 2; background: blue; color: white; padding: 10px; margin-top: -15px; margin-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Layout CSS</h1>
+  <div class="block">Block - full lebar</div>
+  <span class="inline">Inline 1</span> <span class="inline">Inline 2</span>
+  <div><span class="inline-block">Inline-Block 1</span><span class="inline-block">Inline-Block 2</span></div>
+  <p class="none">Ini display none - tidak tampil</p>
+  <div class="relatif">Position Relative - geser 10px bawah, 15px kanan</div>
+  <div class="wadah">Wadah Relative<div class="absolut">Absolute - pojok kanan atas wadah</div></div>
+  <div class="float-kiri">Float Kiri</div>
+  <p>Teks mengalir di samping float. Teks mengalir di samping float.</p>
+  <div class="clear"></div>
+  <div class="overflow">Overflow auto - teks panjang ini akan bisa di-scroll kalau melebihi tinggi 60px. Teks panjang... teks panjang... teks panjang... teks panjang...</div>
+  <div class="z1">Z-index 1 - di bawah</div>
+  <div class="z2">Z-index 2 - di atas</div>
+  <div class="tetap">Fixed - selalu di pojok</div>
+</body>
+</html>

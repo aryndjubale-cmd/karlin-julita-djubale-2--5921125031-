@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-02 Selector</title>
+  <style>
+    * { box-sizing: border-box; }
+    p { color: #333; }
+    .merah { color: red; }
+    #unik { color: green; font-weight: bold; }
+    div p { color: blue; } /* descendant */
+    h2 + p { background: yellow; } /* adjacent sibling */
+    h2 ~ p { border-left: 3px solid orange; padding-left: 8px; } /* general sibling */
+    input[type="text"] { border: 2px solid orange; padding: 6px; }
+    a:hover { color: red; }
+    li:first-child { font-weight: bold; }
+    li:last-child { color: purple; }
+  </style>
+</head>
+<body>
+  <h2>Selector</h2>
+  <p>Paragraf biasa</p>
+  <p class="merah">Class merah</p>
+  <p id="unik">ID unik</p>
+  <div><p>Paragraf di dalam div jadi biru</p></div>
+  <ul><li>Pertama - tebal</li><li>Tengah</li><li>Terakhir - ungu</li></ul>
+  <input type="text" placeholder="Input text">
+  <p><a href="#">Hover link ini</a></p>
+</body>
+</html>

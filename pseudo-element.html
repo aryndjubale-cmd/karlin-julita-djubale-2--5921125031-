@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-07 Pseudo Element</title>
+  <style>
+    .kutip::before { content: "“"; font-size: 40px; color: #1a73e8; }
+    .kutip::after { content: "”"; font-size: 40px; color: #1a73e8; }
+    p::first-letter { font-size: 32px; color: red; font-weight: bold; float: left; }
+    p::first-line { font-weight: bold; }
+    ::selection { background: yellow; color: black; }
+    ::placeholder { color: #999; font-style: italic; }
+    .badge::before { content: "★ "; color: gold; }
+  </style>
+</head>
+<body>
+  <h1>Pseudo Element</h1>
+  <p class="kutip">Ini kutipan, tanda petiknya dari ::before dan ::after.</p>
+  <p class="badge">Produk Best Seller</p>
+  <p>Coba blok teks ini, seleksinya jadi kuning karena ::selection.</p>
+  <input type="text" placeholder="Placeholder miring abu-abu">
+</body>
+</html>

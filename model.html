@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-06 Box Model</title>
+  <style>
+    .kotak {
+      width: 250px;
+      /* content -> padding -> border -> margin */
+      padding: 20px;
+      border: 3px solid #1a73e8;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    .margin-contoh { margin: 10px 20px 30px 40px; background: #ffe0b2; padding: 10px; }
+    .padding-contoh { padding: 5px 15px 25px 35px; background: #c8e6c9; }
+    .border-contoh { border-top: 5px solid red; border-right: 3px dashed green; border-bottom: 2px dotted blue; border-left: 4px double purple; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Box Model</h1>
+  <div class="kotak">Ini kotak: content + padding 20px + border 3px + margin auto</div>
+  <div class="margin-contoh">Margin: atas 10, kanan 20, bawah 30, kiri 40</div>
+  <div class="padding-contoh">Padding: atas 5, kanan 15, bawah 25, kiri 35</div>
+  <div class="border-contoh">Border beda-beda tiap sisi</div>
+</body>
+</html>

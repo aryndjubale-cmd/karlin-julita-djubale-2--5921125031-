@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-09 Flex</title>
+  <style>
+    .flex { display: flex; gap: 10px; }
+    .flex div { flex: 1; background: #bbdefb; padding: 20px; text-align: center; }
+    .flex-tengah { display: flex; justify-content: center; align-items: center; height: 100px; background: #e0e0e0; }
+    .flex-antara { display: flex; justify-content: space-between; background: #ffe0b2; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Flexbox</h1>
+  <div class="flex"><div>1</div><div>2</div><div>3</div></div><br>
+  <div class="flex-tengah"><div>Tengah Sempurna</div></div><br>
+  <div class="flex-antara"><span>Kiri</span><span>Tengah</span><span>Kanan</span></div>
+</body>
+</html>

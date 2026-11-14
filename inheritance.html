@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-03 Inheritance</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    /* color, font, line-height DIWARISKAN ke anak */
+    /* border, margin, padding, background TIDAK diwariskan */
+    .wadah { color: red; border: 2px solid red; padding: 15px; }
+    .anak { /* color ikut merah dari parent, border tidak ikut */ }
+    .stop { color: black; } /* bisa diputus pakai nilai baru */
+  </style>
+</head>
+<body>
+  <h1>Inheritance</h1>
+  <div class="wadah">
+    Ini parent merah.
+    <p class="anak">Ini anak ikut merah, tapi tidak punya border.</p>
+    <p class="stop">Ini anak diputus jadi hitam.</p>
+  </div>
+</body>
+</html>

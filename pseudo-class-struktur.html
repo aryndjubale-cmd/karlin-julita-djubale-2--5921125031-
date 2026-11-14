@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-06 Struktur</title>
+  <style>
+    li:first-child { color: red; font-weight: bold; }
+    li:last-child { color: blue; }
+    li:nth-child(2) { background: yellow; }
+    li:nth-child(odd) { background: #f0f0f0; }
+    li:nth-child(even) { background: #e0e0e0; }
+    p:first-of-type { color: green; }
+    p:last-of-type { color: purple; }
+    p:empty { height: 20px; background: pink; }
+    :not(.lewat) { border-left: 2px solid #ccc; padding-left: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Struktur</h1>
+  <ul><li>Pertama - merah</li><li>Kedua - kuning</li><li>Ketiga</li><li>Keempat</li><li>Terakhir - biru</li></ul>
+  <p>Paragraf pertama - hijau</p>
+  <p>Paragraf tengah</p>
+  <p>Paragraf terakhir - ungu</p>
+  <p class="lewat">Ini pakai class lewat, tidak kena :not</p>
+  <p></p>
+</body>
+</html>

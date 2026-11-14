@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>05-07 List Tabel</title>
+  <style>
+    .ul-bulat { list-style-type: circle; }
+    .ul-gambar { list-style-image: url("https://via.placeholder.com/10"); }
+    .ul-dalam { list-style-position: inside; background: #f0f0f0; }
+    .ol-angka { list-style-type: upper-roman; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #999; padding: 10px; text-align: left; }
+    th { background: #1a73e8; color: white; }
+    tr:nth-child(even) { background: #f2f2f2; }
+    caption { caption-side: top; font-weight: bold; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>List & Tabel</h1>
+  <ul class="ul-bulat"><li>Circle</li><li>Circle 2</li></ul>
+  <ol class="ol-angka"><li>Romawi I</li><li>Romawi II</li></ol>
+  <ul class="ul-dalam"><li>List position inside</li></ul>
+  <table>
+    <caption>Tabel Nilai</caption>
+    <tr><th>Nama</th><th>Nilai</th></tr>
+    <tr><td>Charlin</td><td>90</td></tr>
+    <tr><td>Greis</td><td>85</td></tr>
+    <tr><td>Jesen</td><td>88</td></tr>
+  </table>
+</body>
+</html>

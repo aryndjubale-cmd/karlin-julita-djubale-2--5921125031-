@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-05 Pseudo Class</title>
+  <style>
+    a:link { color: blue; }
+    a:visited { color: purple; }
+    a:hover { color: red; text-decoration: underline; }
+    a:active { color: orange; }
+    input:focus { border: 2px solid #1a73e8; outline: none; background: #e3f2fd; }
+    input:checked + label { color: green; font-weight: bold; }
+    input:disabled { background: #ddd; }
+    input:required { border-left: 4px solid red; }
+    button:hover { background: #1a73e8; color: white; }
+    button:active { transform: scale(0.95); }
+  </style>
+</head>
+<body>
+  <h1>Pseudo Class</h1>
+  <p><a href="https://example.com">Coba hover link ini</a></p>
+  <input type="text" placeholder="Klik, jadi biru karena :focus" required><br><br>
+  <input type="checkbox" id="c1"><label for="c1"> Centang saya - jadi hijau</label><br><br>
+  <input type="text" placeholder="Disabled" disabled><br><br>
+  <button>Hover & Klik Saya</button>
+</body>
+</html>

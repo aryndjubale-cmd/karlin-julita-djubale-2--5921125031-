@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>06-08 Important</title>
+  <style>
+    p { color: blue; }
+    .merah { color: red; }
+    #unik { color: green; }
+    /* !important mengalahkan semuanya, bahkan ID */
+    .menang { color: purple !important; }
+    /* Cara yang benar: jangan andalkan !important, perbaiki specificity saja */
+  </style>
+</head>
+<body>
+  <h1>!important</h1>
+  <p id="unik" class="merah menang" style="color: orange;">Ini ungu karena !important, mengalahkan inline orange dan ID hijau.</p>
+  <p>Pakai !important hanya untuk darurat / override library, jangan untuk semua CSS.</p>
+</body>
+</html>
